@@ -37,4 +37,13 @@ class FizzBuzz {
 
         }
     }
+    public static boolean fizzbuzzBool(int i) {
+        // Find out which numbers divide i.
+        boolean divisibleBy3 = i % 3 == 0;
+        boolean divisibleBy5 = i % 5 == 0;
+
+        // Print our appropriate result.
+        return divisibleBy3 || divisibleBy5;
+    }
+
 }
